@@ -89,7 +89,7 @@ export default function EventContact() {
           </div>
 
           {/* Main Contact Form Card */}
-          <div className="bg-card rounded-xl shadow-xl p-8 md:p-10 border border-muted/20 animate-fade-in opacity-0 animate-delay-300">
+          <div className="bg-card bg-white  rounded-xl shadow-xl p-8 md:p-10 border border-muted/20 animate-fade-in opacity-0 animate-delay-300">
             <div className="mb-8 text-center">
               <h2 className="text-3xl font-semibold text-primary mb-4">
                 Contact Our Event Specialists
