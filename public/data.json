@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "title": "Global Climate Strike",
+    "date": "2025-06-15",
+    "location": "New York City, USA",
+    "description": "Join thousands in raising awareness about the climate crisis.",
+    "attendance": 5000,
+    "organizer": "Fridays for Future",
+    "category": "Protest",
+    "ticketPrice": "Free",
+    "image": "https://images.unsplash.com/photo-1603242453803-166ed9b9e4c7"
+  },
+  {
+    "id": 2,
+    "title": "Beach Cleanup Drive",
+    "date": "2025-07-10",
+    "location": "Bondi Beach, Australia",
+    "description": "Help us clean the beach and protect marine life.",
+    "attendance": 800,
+    "organizer": "Ocean Conservancy",
+    "category": "Volunteer",
+    "ticketPrice": "Free",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+  },
+  {
+    "id": 3,
+    "title": "Tree Plantation Day",
+    "date": "2025-08-05",
+    "location": "Nairobi, Kenya",
+    "description": "Plant trees to combat deforestation and global warming.",
+    "attendance": 1200,
+    "organizer": "Green Earth Organization",
+    "category": "Community",
+    "ticketPrice": "Free",
+    "image": "https://images.unsplash.com/photo-1578926375605-eaf7559b1458"
+  },
+  {
+    "id": 4,
+    "title": "Sustainable Living Workshop",
+    "date": "2025-09-12",
+    "location": "Berlin, Germany",
+    "description": "Learn sustainable practices for a greener future.",
+    "attendance": 300,
+    "organizer": "Eco Living Hub",
+    "category": "Workshop",
+    "ticketPrice": "$15",
+    "image": "https://images.unsplash.com/photo-1592630486592-ec4c5ed9263e"
+  },
+  {
+    "id": 5,
+    "title": "Eco Market Fair",
+    "date": "2025-10-20",
+    "location": "Amsterdam, Netherlands",
+    "description": "Discover eco-friendly products and green innovations.",
+    "attendance": 1500,
+    "organizer": "EcoBiz Netherlands",
+    "category": "Fair",
+    "ticketPrice": "Free",
+    "image": "https://images.unsplash.com/photo-1542838132-92c53300491e"
+  },
+  {
+    "id": 6,
+    "title": "Zero Waste Festival",
+    "date": "2025-11-05",
+    "location": "San Francisco, USA",
+    "description": "Celebrate zero waste lifestyle with workshops and exhibitions.",
+    "attendance": 2000,
+    "organizer": "Zero Waste Alliance",
+    "category": "Festival",
+    "ticketPrice": "$10",
+    "image": "https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2"
+  },
+  {
+    "id": 7,
+    "title": "Wildlife Conservation Seminar",
+    "date": "2025-11-22",
+    "location": "Cape Town, South Africa",
+    "description": "Discuss wildlife protection strategies with experts.",
+    "attendance": 600,
+    "organizer": "Wildlife Africa",
+    "category": "Seminar",
+    "ticketPrice": "$20",
+    "image": "https://images.unsplash.com/photo-1518684079-54d7f5444c34"
+  },
+  {
+    "id": 8,
+    "title": "Urban Gardening Meetup",
+    "date": "2025-12-10",
+    "location": "Tokyo, Japan",
+    "description": "Learn how to grow food in the city with vertical gardens.",
+    "attendance": 450,
+    "organizer": "Tokyo Green Spaces",
+    "category": "Meetup",
+    "ticketPrice": "Free",
+    "image": "https://images.unsplash.com/photo-1524593192371-a7ff1f68f8f4"
+  },
+  {
+    "id": 9,
+    "title": "Renewable Energy Expo",
+    "date": "2026-01-15",
+    "location": "Copenhagen, Denmark",
+    "description": "Explore innovations in solar, wind, and hydro power.",
+    "attendance": 3000,
+    "organizer": "Energy Future Denmark",
+    "category": "Expo",
+    "ticketPrice": "$30",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811"
+  },
+  {
+    "id": 10,
+    "title": "Green Architecture Conference",
+    "date": "2026-02-05",
+    "location": "Singapore",
+    "description": "Architects and designers discuss sustainable building solutions.",
+    "attendance": 1000,
+    "organizer": "Green Building Council",
+    "category": "Conference",
+    "ticketPrice": "$50",
+    "image": "https://images.unsplash.com/photo-1579546928686-1e56c1f1b640"
+  }
+]

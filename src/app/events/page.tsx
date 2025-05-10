@@ -18,9 +18,9 @@ interface Event {
   _id: string;
   title: string;
   date: string;
-  time: string;
+  time: string; // Changed from ticketPrice
   location: string;
-  attendees: number;
+  attendees: number; // Corrected from attendance
   status: string;
   image: string;
   createdAt: string;
@@ -44,7 +44,7 @@ const EventsPage = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await fetch("");
+      const response = await fetch("/data.json");
       const data = await response.json();
       setEvents(data);
       setLoading(false);
@@ -54,11 +54,11 @@ const EventsPage = () => {
     }
   };
 
-  const handleJoinEvent = (eventId: string) => {
+  const handleJoinEvent = (id: string) => {
     if (!user) {
       router.push("/login");
     } else {
-      router.push("/volunteer");
+      router.push("/");
     }
   };
 
@@ -159,7 +159,7 @@ const EventsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {currentEvents.map((event) => (
               <motion.div
-                key={event._id}
+                key={event.id}
                 variants={fadeInUp}
                 whileHover={{ y: -5 }}
                 className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100"

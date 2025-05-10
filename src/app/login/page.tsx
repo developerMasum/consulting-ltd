@@ -1,6 +1,34 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { ChevronRight } from "lucide-react";
 
 const LoginPage = () => {
+  const [isLogin, setIsLogin] = useState(true);
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleLogin = (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+
+    // Simulate login process
+    setTimeout(() => {
+      alert(`${isLogin ? "Logged In" : "Signed Up"} successfully!`);
+      setIsLoading(false);
+    }, 1000);
+  };
+
+  const handleGoogleLogin = () => {
+    alert("Google Login clicked!");
+  };
+
+  const handleAdminCredentials = () => {
+    setEmail("admin@example.com");
+    setPassword("admin123");
+  };
+
   return (
     <div>
       <div className="min-h-screen flex flex-col lg:flex-row">
@@ -10,7 +38,7 @@ const LoginPage = () => {
             <div className="flex items-center mb-8">
               <div className="w-8 h-8 bg-blue-800 rounded-lg mr-3"></div>
               <h1 className="text-2xl font-bold text-gray-800">
-                Ecovision Partners
+                Inspira Consulting
               </h1>
             </div>
 
@@ -129,15 +157,14 @@ const LoginPage = () => {
               <div className="text-center mt-4">
                 {isLogin ? (
                   <p>
-                    Don't have an account?
-                    <Link
-                      href="/register"
+                    Don&apos;t have an account?
+                    <button
                       type="button"
                       onClick={() => setIsLogin(false)}
                       className="text-blue-600 ml-1 hover:underline"
                     >
                       Sign up
-                    </Link>
+                    </button>
                   </p>
                 ) : (
                   <p>
