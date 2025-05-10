@@ -1,13 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { AiOutlineLogin, AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiOutlineLogin } from "react-icons/ai";
 import Link from "next/link";
 import Image from "next/image";
 
 const Navbar = () => {
   const [hamburger, setHamburger] = useState(false);
-  const [showLoginButton, setShowLoginButton] = useState(false);
+  const [, setShowLoginButton] = useState(false);
   const [user, setUser] = useState<{ email: string; photoURL: string } | null>(
     null
   );
@@ -80,13 +80,10 @@ const Navbar = () => {
         </ul>
 
         {/* User or Login Button */}
-        {/* <div>
+        <div>
           {user?.email ? (
-            <div className="dropdown dropdown-end">
-              <div
-                tabIndex={0}
-                className="btn btn-ghost btn-circle avatar ring-2 ring-teal-300 ring-offset-2"
-              >
+            <div className="relative group">
+              <div className="btn btn-ghost btn-circle avatar ring-2 ring-teal-300 ring-offset-2">
                 <div className="w-10 rounded-full overflow-hidden">
                   {user?.photoURL && (
                     <Image
@@ -98,14 +95,12 @@ const Navbar = () => {
                   )}
                 </div>
               </div>
-              <ul
-                tabIndex={0}
-                className="menu dropdown-content bg-white rounded-lg z-[50] mt-2 w-52 p-2 shadow-lg border border-teal-100"
-              >
+              {/* Dropdown */}
+              <ul className="absolute right-0 mt-2 w-52 p-2 shadow-lg border border-teal-100 bg-white rounded-lg z-[50] opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-all duration-200">
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-700 hover:text-teal-600 hover:bg-teal-50"
+                    className="text-gray-700 hover:text-teal-600 hover:bg-teal-50 block px-4 py-2 rounded-md"
                   >
                     Dashboard
                   </Link>
@@ -113,7 +108,7 @@ const Navbar = () => {
                 <li>
                   <button
                     onClick={logOut}
-                    className="text-gray-700 hover:text-teal-600 hover:bg-teal-50"
+                    className="w-full text-left text-gray-700 hover:text-teal-600 hover:bg-teal-50 block px-4 py-2 rounded-md"
                   >
                     Logout
                   </button>
@@ -121,16 +116,14 @@ const Navbar = () => {
               </ul>
             </div>
           ) : (
-            showLoginButton && (
-              <Link
-                href="/login"
-                className="btn bg-gradient-to-r from-teal-500 to-emerald-500 border-none text-white hover:from-teal-600 hover:to-emerald-600 hidden lg:flex gap-2 shadow-md hover:shadow-lg"
-              >
-                <AiOutlineLogin className="text-xl" /> Join Us
-              </Link>
-            )
+            <Link
+              href="/login"
+              className="btn bg-gradient-to-r from-teal-500 to-emerald-500 border-none text-white hover:from-teal-600 hover:to-emerald-600 hidden lg:flex gap-2 shadow-md hover:shadow-lg"
+            >
+              <AiOutlineLogin className="text-xl" /> Join Us
+            </Link>
           )}
-        </div> */}
+        </div>
       </div>
 
       {/* Mobile Dropdown */}
