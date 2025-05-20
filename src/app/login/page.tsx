@@ -38,7 +38,7 @@ const LoginPage = () => {
             <div className="flex items-center mb-8">
               <div className="w-8 h-8 bg-blue-800 rounded-lg mr-3"></div>
               <h1 className="text-2xl font-bold text-gray-800">
-                Inspira Consulting
+                GreenConsulting
               </h1>
             </div>
 

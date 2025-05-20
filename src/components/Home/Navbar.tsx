@@ -55,8 +55,7 @@ const Navbar = () => {
           </button>
           <Link href="/" className="flex items-center gap-2">
             <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-teal-500 to-emerald-500">
-              Inspira{" "}
-              <span className="text-teal-500 lowercase">consultancy</span>
+              Green <span className="text-teal-500 lowercase">consultancy</span>
             </span>
           </Link>
         </div>
